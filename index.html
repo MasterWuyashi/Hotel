@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hotel Montenegro</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- map-->
+
+  <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Bootstrap Scripts -->
+
+  <script src="https://kit.fontawesome.com/0e2482c372.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<style>
+
+
+#prev{
+font-size: 5vw;
+color: #ae0be0;
+
+}
+
+#next{
+font-size: 5vw;
+color: #240be0;
+
+}
+#car-img{
+
+width: 100%;
+
+height:50vw;
+
+
+}
+
+
+
+
+
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #b11308 0%,
+    #0c0fc8 29%,
+    #0de20a 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  font-family: 'Dancing Script', cursive;
+
+
+  display: inline-block;
+      font-size: 7vw;
+      margin-top: 8%;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+
+
+#stay{
+padding-top: 5%;
+width: 100%;
+
+}
+.text2{
+    padding-top: 5%;
+color: white;
+text-align: center;
+font-family: 'Lobster', cursive;
+font-weight: bolder;
+background-color: black;
+padding-bottom: 5%;
+
+
+}
+
+
+#img{
+
+    width: 50%;
+}
+
+
+#img2{
+margin-top: 5%;
+width: 70%;
+border-width: 1vw;
+border-style: groove;
+border-color: rgb(245, 5, 5);
+}
+
+
+
+  .containert{
+padding-top: 5%;
+justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);}
+   
+
+
+    .containerD{
+
+justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);}
+
+
+.div1{
+display: grid;
+justify-items: center;
+
+}
+
+
+.div2{
+display: grid;
+justify-items: center;
+margin-top: 10%;
+border-width: 3vw;
+border-style: dotted;
+border-color: rgb(232, 111, 5);
+width: 80%;
+
+}
+
+
+
+
+.title{
+
+    
+    font-size: 3vw;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.title2{
+
+    font-size: 3vw;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.text{
+
+padding-left: 3%;
+padding-right: 3%;
+text-align:justify;
+font-family: 'Edu NSW ACT Foundation', cursive;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:720px) {
+    .containert{
+padding-top: 5%;
+justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);}
+   
+
+    #img{
+
+        width: 30%;
+    }
+.div1{
+display: grid;
+justify-items: center;
+padding-bottom: 7%;
+
+}
+  
+
+.text{
+
+    padding-left: 9%;
+    padding-right:9%;
+    
+}
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
+.content {
+
+
+display: flex;
+  background: #ffffff;
+  min-height: 35vh;
+  align-items: center;
+  justify-content: center;
+    
+  
+}
+
+
+
+.content h2 {
+  color: #ffffff;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 5px #bc7906;
+}
+
+.content h2:nth-child(2) {
+  color: #bc7906;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+
+
+.mapZone{
+    padding-top: 12%;
+display: grid;
+justify-items: center;
+padding-bottom: 12%;
+}
+
+
+#map{
+    display: grid;
+justify-items: center;
+border-style: dashed;
+border-width: 2vw;
+border-color: #000000;
+
+
+}
+
+
+.start-menu{
+
+position: fixed;
+bottom: 0;
+left: 0;
+text-align: center;      
+width: 100%;
+height: auto;
+color: rgb(255, 255, 255);
+font-family: 'Edu NSW ACT Foundation', cursive;
+
+background-color: black;
+border-bottom: 3px solid rgb(246, 1, 234);
+
+
+
+
+
+
+   }
+
+
+
+
+
+</style>
+    <center><div id="car" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators" id="indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2" ></li>
+       
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="car-img">
+            <img class="d-block w-100" src="pics/img 0.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item" id="car-img">
+            <img class="d-block w-100" src="pics/img 1.webp" alt="Second slide">
+          </div>
+          <div class="carousel-item" id="car-img">
+            <img class="d-block w-100" src="pics/img 2.jpg" alt="Third slide">
+          </div>
+         
+        </div>
+        <a class="carousel-control-prev" href="#car" role="button" data-slide="prev">
+            <i class="fa-solid fa-square-caret-left" id="prev"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#car" role="button" data-slide="next">
+            <i class="fa-solid fa-square-caret-right" id="next"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div></center>
+
+    
+<br>
+
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 class="animate-charcter"> Palmon Bay Hotel & Spa</h3>
+      </div>
+    </div>
+  </div>
+  
+  
+<div id="stay">
+
+    <h2 class="text2">
+
+        Enjoy your stay in our <span class="stars" onmouseover="stars()" id="stars" onmouseleave="stars2()">⭐ ⭐ ⭐ ⭐ hotel</span>
+
+        <br>
+        
+    </h2>
+
+    <div class="containert">
+  
+        <div class="div1 ">
+    <img id="img"src="pics\bed.jpg" > 
+    <br>
+    &nbsp;
+    <br>
+    <p class="title">Apartments</p class="title">
+    
+    
+   <p class="text">Enjoy your stay in our comfy beds and free WI-FI, we offer you free parking space. This hotel is only 25km away from Tivat Airport.</p>
+        </div>
+
+        <div class="div1">
+            <img id="img"src="pics\food.png" >
+            <br>
+            &nbsp;
+            <br>
+            <p class="title">Food</p class="title">
+            
+                <p class="text">Look at our menu and choose what you like, we offer both food and drink, we offer many homemade dishes.
+                    You can view our dishes below. 
+                </p>
+                </div>
+
+
+        
+        <div class="div1">
+    <img id="img"src="pics\beach icon.webp" >
+    <br>
+    &nbsp;
+    <br>
+    <p class="title">Beach</p class="title">
+    
+        <p class="text"> Enjoy your view on Adriatic sea. You can swim in our pool, we offer you message  treatments, visit our spa center.
+            This hotel offers you a private beach. </p>
+        </div>
+        <div class="div1">
+
+      </div>
+
+
+
+
+</div>
+</div>
+      
+
+
+
+
+<section>
+    <div class="content">
+        <div class="Kemi">
+      <h2>Dishes</h2>
+      
+      <h2>Dishes</h2></div>
+      
+    </div>
+    
+  </section>
+  
+  
+
+
+
+  <div class="containerD">
+  
+    <div class="div2 ">
+<img id="img2"src="pics\olive and fish.jpeg" > 
+<br>
+&nbsp;
+<br>
+<p class="title2">Spaghetti with fish - 8 €</p class="title">
+
+
+
+    </div>
+
+    <div class="div2">
+        <img id="img2"src="pics\Octopuss.jpg" >
+        <br>
+        &nbsp;
+        <br>
+        <p class="title2">Grilled Octopus - 25 €</p class="title">
+        
+            
+            </div>
+
+
+    
+    <div class="div2">
+<img id="img2"src="pics\Squid.webp" >
+<br>
+&nbsp;
+<br>
+<p class="title2">Grilled squids - 10 €</p class="title">
+
+    
+    </div>
+   
+
+
+
+        <div class="div2">
+            <img id="img2"src="pics\sea urchin.jpg" >
+            <br>
+            &nbsp;
+            <br>
+            <p class="title2">Sea urchins - 30 €</p class="title">
+            
+                
+                </div>
+
+
+
+                <div class="div2">
+                    <img id="img2"src="pics\steak.jpg" >
+                    <br>
+                    &nbsp;
+                    <br>
+                    <p class="title2">Steak - 15 €</p class="title">
+                    
+                        
+                        </div>
+        
+
+
+                        <div class="div2">
+                            <img id="img2"src="pics\Sushi rolls.webp" >
+                            <br>
+                            &nbsp;
+                            <br>
+                            <p class="title2">Sushi rolls - 20 €</p class="title">
+                            
+                                
+                                </div>
+
+
+
+</div>
+
+
+  
+
+
+  <div class="mapZone">
+
+<div id = "map" style = "width:80%; height:580px"></div>
+
+</div>
+
+
+  
+<div class="start-menu">
+
+    <h2>@2023 Palmon Bay Hotel & Spa - site made by Saša Bajić</h2>
+    </div>
+
+  
+   
+       
+     
+<script>
+function stars(){
+document.getElementById("stars").innerHTML = "🌟 🌟 🌟 🌟 hotel"
+
+
+
+}
+function stars2(){
+
+    document.getElementById("stars").innerHTML = "⭐ ⭐ ⭐ ⭐ hotel"
+
+}
+
+
+
+
+
+
+// Creating map options
+var mapOptions = {
+            center: [42.45794264258826, 18.511649054653404],
+            zoom: 13
+         }
+         // Creating a map object
+         var map = new L.map('map', mapOptions);
+         
+         // Creating a Layer object
+         var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+         
+         // Adding layer to the map
+         map.addLayer(layer);
+         
+         // Creating a marker
+
+         var myIcon = L.icon({
+    iconUrl: 'pics\transparent marker.jpg'
+});
+
+  
+
+var marker = L.marker([42.45794264258826, 18.511649054653404]);
+         icon: myIcon;
+ 
+         // Adding marker to the map
+         marker.addTo(map);
+
+    
+
+
+
+
+</script>
+
+</body>
+
+</html>
