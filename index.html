@@ -6,6 +6,8 @@
   <title>Hotel Montenegro</title>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/0e2482c372.js" crossorigin="anonymous"></script>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
 
@@ -143,7 +145,7 @@ border-color: rgb(245, 5, 5);
 
 
   .containert{
-padding-top: 5%;
+padding-top: 10%;
 justify-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);}
@@ -200,6 +202,7 @@ padding-right: 3%;
 text-align:justify;
 font-family: 'Edu NSW ACT Foundation', cursive;
 font-size: 2vw;
+
 
 }
 
@@ -336,6 +339,8 @@ display: flex;
 display: grid;
 justify-items: center;
 padding-bottom: 12%;
+
+
 }
 
 
@@ -370,6 +375,88 @@ border-bottom: 3px solid rgb(246, 1, 234);
 
 
    }
+
+
+
+   .menubox{
+
+margin-top: 7%;
+display: grid;
+padding-top: 10%;
+width: 80% ;
+justify-items: center;
+margin-left: 10%;
+   }
+
+
+.menubox:hover{
+ 
+  background-color: #bc7906;
+  border-radius: 50%;
+  border-color: #000000;
+  border: 1vw;
+  border-style:ridge;
+  
+}
+
+   .menu{
+
+display: grid;
+justify-items: center;
+
+
+   }
+
+   a:link    { color: inherit; text-decoration: none; }
+  a:visited { color: inherit; text-decoration: none; }
+  a:hover   { color: inherit; text-decoration: none; }
+  a:active  { color: inherit; text-decoration: none; } 
+
+
+
+  .Rooms{
+
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2vw;
+    row-gap: 2vw;
+  }
+
+  .Room{
+display: grid;
+justify-items: center;
+
+background-color: #bc7906;
+border-radius: 95%;
+
+text-align: center;
+
+border-color: #5500ec;
+border-style: inset;
+border-width: 0.6vw;
+
+  }
+
+
+
+  .imag{
+
+    width: 60%;
+    padding-top: 10%;
+  }
+
+
+#s1:hover{background-color: #b11308;}
+
+
+#s2:hover{background-color: #b11308;}
+
+
+#s3:hover{background-color: #b11308;}
+
+
+#s4:hover{background-color: #b11308;}
 
 
 
@@ -439,7 +526,7 @@ border-bottom: 3px solid rgb(246, 1, 234);
     <p class="title">Apartments</p class="title">
     
     
-   <p class="text">Enjoy your stay in our comfy beds and free WI-FI, we offer you free parking space. This hotel is only 25km away from Tivat Airport.</p>
+   <p class="text">Enjoy your stay in our comfy beds and free WI-FI, we offer you free parking space. This hotel is only 25km away from Tivat Airport and 30km away from Dubrovnik Airport. </p>
         </div>
 
         <div class="div1">
@@ -570,26 +657,100 @@ border-bottom: 3px solid rgb(246, 1, 234);
 
 
 </div>
+<a href="rest of the menu.html">
+<div class="menubox">
+<div class="menu">
 
+  <img width="60%" style="border-radius: 50%;" src="pics/menu.png">
 
+  <p style="font-size: 2vw; font-family: fantasy;">Browse the rest of the menu here</p>
+</div></div></a>
   
+
+
+
+
+<div class="Rooms"  style="margin-top: 10%;">
+  <a href="Room 1.html"><div class="Room" id="s1">
+  
+  <img class="imag"src="pics/Room1.jpg">
+  <p style="font-size: 2vw;">  This room is intended for <i class="fa-solid fa-user" style="padding-right: 2%;"></i><i class="fa-solid fa-user"></i> users</p>
+  
+  
+  
+
+  </div></a>
+  
+  <a href="Room 2.html"><div class="Room" id="s2">
+  
+    <img  class="imag"src="pics/Room2.jpg">
+    <p style="font-size: 2vw;">  This room is intended for <i class="fa-solid fa-user" style="padding-right: 2%;"></i><i class="fa-solid fa-user" style="padding-right: 2%;"></i><i class="fa-solid fa-user" style="padding-right: 2%;"></i><i class="fa-solid fa-user"></i> users</p>
+    
+    
+    
+    </div></a>
+  
+  
+  
+    <a href="Room 3.html"><div class="Room" id="s3">
+  
+      <img class="imag" src="pics/room3.jpg">
+      <p style="font-size: 2vw;">  This room is intended for <i class="fa-solid fa-user" style="padding-right: 2%;"></i><i class="fa-solid fa-user"></i> users</p>
+      
+      
+      
+      </div></a>
+  
+  
+      <a href="Room 4.html"><div class="Room" id="s4">
+  
+        <img class="imag" src="pics/room3.jpg">
+        <p style="font-size: 2vw;">  This room is intended for <i class="fa-solid fa-user" style="padding-right: 2%;"></i><i class="fa-solid fa-user"></i> users</p>
+        
+        
+        
+        </div></a>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+
+
+
+
+
 
 
   <div class="mapZone">
 
-<div id = "map" style = "width:80%; height:580px"></div>
+    <iframe id="map" style="border-style: dashed; border-width: 2vw; border-color: #000000;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735.8944849506469!2d18.511105067174178!3d42.4579954669587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134c3c86dbefd335%3A0x597cf0a03db95651!2sPalmon%20Bay%20Hotel%20%26%20Spa!5e0!3m2!1shr!2sba!4v1679405924786!5m2!1shr!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 </div>
 
 
   
+
+
+
+
+
+
+
+
 <div class="start-menu">
 
-    <h2>@2023 Palmon Bay Hotel & Spa - site made by SB</h2>
+    <h2>@2023 Palmon Bay Hotel & Spa - site made by Saša Bajić</h2>
     </div>
 
   
    
+
+
+    
        
      
 <script>
