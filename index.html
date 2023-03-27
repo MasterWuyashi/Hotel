@@ -47,6 +47,9 @@
 <style>
 
 
+  @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
 #prev{
 font-size: 5vw;
 color: #ae0be0;
@@ -131,6 +134,42 @@ padding-bottom: 5%;
 #img{
 
     width: 50%;
+}
+
+
+
+#img:hover{
+
+border-radius: 50%;
+
+}
+
+.div1:hover #img{
+
+color: white;
+background-color: #08a063;
+border-radius: 40%;
+
+
+
+
+
+}
+
+
+
+.div1:hover{
+
+color: white;
+background-color: #08a063;
+border-radius: 15%;
+
+border-color: #000000;
+
+
+
+
+
 }
 
 
@@ -301,6 +340,125 @@ display: flex;
   animation: animate 4s ease-in-out infinite;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content1 {
+
+
+display: flex;
+  background: #ffffff;
+  min-height: 35vh;
+  align-items: center;
+  justify-content: center;
+    
+  
+}
+
+
+
+
+
+
+
+
+
+.content1 h2 {
+  color: #ffffff;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content1 h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 5px #000000;
+}
+
+.content1 h2:nth-child(2) {
+  color: #0572c6;
+  animation: animate 4s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+
+
+
+.content1 {
+
+
+display: flex;
+  background: #ffffff;
+  min-height: 35vh;
+  align-items: center;
+  justify-content: center;
+    
+  
+}
+
+
+
+
+
+
+
+
+
+
+.content2 {
+
+
+display: flex;
+  background: #ffffff;
+  min-height: 35vh;
+  align-items: center;
+  justify-content: center;
+    
+  
+}
+
+
+
+.content2 h2 {
+  color: #ffffff;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content2 h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 5px #000000;
+}
+
+.content2 h2:nth-child(2) {
+  color: #e30ace;
+  animation: animate 4s ease-in-out infinite;
+}
+
+
+
+
+
+
+
 @keyframes animate {
   0%,
   100% {
@@ -442,26 +600,56 @@ border-width: 0.6vw;
 
   .imag{
 
-    width: 80%;
-    padding-top: 10%; border-radius: 80%;
+    width: 60%;
+    padding-top: 10%;
+    border-radius: 12%;
   }
 
 
-#s1:hover{background-color: #b11308;}
+#s1:hover{background-color: #b11308; color: white;}
 
 
-#s2:hover{background-color: #b11308;}
+#s2:hover{background-color: #b11308;color: white;}
 
 
-#s3:hover{background-color: #b11308;}
+#s3:hover{background-color: #b11308;color: white;}
 
 
-#s4:hover{background-color: #b11308;}
+#s4:hover{background-color: #b11308;color: white;}
 
 
 
 
 
+.weather{
+
+  display: grid;
+  justify-items: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.weather-div{
+
+  display: grid;
+  justify-items: center;
+
+}
+
+.weather-div img{
+
+width: 60%;
+}
+
+.weather:hover{
+
+
+background-color: #0572c6;
+border-radius: 43%;
+color: white;
+
+
+}
 </style>
     <center><div id="car" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators" id="indicators">
@@ -518,7 +706,7 @@ border-width: 0.6vw;
 
     <div class="containert">
   
-        <div class="div1 ">
+        <a href="#toRooms"><div class="div1 ">
     <img id="img"src="pics\bed.jpg" > 
     <br>
     &nbsp;
@@ -527,23 +715,23 @@ border-width: 0.6vw;
     
     
    <p class="text">Enjoy your stay in our comfy beds and free WI-FI, we offer you free parking space. This hotel is only 25km away from Tivat Airport and 30km away from Dubrovnik Airport. </p>
-        </div>
+        </div></a>
 
-        <div class="div1">
-            <img id="img"src="pics\food.png" >
+        <a href="#kemi"><div class="div1">
+          <img id="img"src="pics\food.png" >
             <br>
             &nbsp;
             <br>
-            <p class="title">Food</p class="title">
+           <p class="title">Food</p class="title">
             
                 <p class="text">Look at our menu and choose what you like, we offer both food and drink, we offer many homemade dishes.
                     You can view our dishes below. 
                 </p>
-                </div>
+                </div></a>
 
 
         
-        <div class="div1">
+                <a href="#beach"> <div class="div1">
     <img id="img"src="pics\beach icon.webp" >
     <br>
     &nbsp;
@@ -552,7 +740,7 @@ border-width: 0.6vw;
     
         <p class="text"> Enjoy your view on Adriatic sea. You can swim in our pool, we offer you message  treatments, visit our spa center.
             This hotel offers you a private beach. </p>
-        </div>
+        </div></a>
         <div class="div1">
 
       </div>
@@ -569,7 +757,7 @@ border-width: 0.6vw;
 
 <section>
     <div class="content">
-        <div class="Kemi">
+        <div class="Kemi" id="kemi">
       <h2>Dishes</h2>
       
       <h2>Dishes</h2></div>
@@ -670,7 +858,20 @@ border-width: 0.6vw;
 
 
 
-<div class="Rooms"  style="margin-top: 10%;">
+<section>
+  <div class="content1">
+      <div class="Kemi" id="kemi" style="margin-top: 25%; margin-bottom: 15%;">
+    <h2>Apartments</h2>
+    
+    <h2>Apartments</h2></div>
+    
+  </div>
+  
+</section>
+
+
+
+<div class="Rooms" id="toRooms"  style="margin-top: 10%;">
   <a href="Room 1.html"><div class="Room" id="s1">
   
   <img class="imag"src="pics/Room1.jpg">
@@ -721,6 +922,26 @@ border-width: 0.6vw;
 
 
 
+  
+<section>
+  <div class="content2">
+      <div class="Kemi" id="kemi" style="margin-top: 25%; margin-bottom: 15%;">
+    <h2>Beach</h2>
+    
+    <h2>Beach</h2></div>
+    
+  </div>
+  
+</section>
+
+
+<a href="weather\index.html"><div class="weather" id="beach">
+  <div class="weather-div">
+<img src="pics/Weather.png">
+<p style="font-size: 3vw; font-family: 'Abel', sans-serif; margin-top: 2%;">Five days weather forecast for Herceg Novi</p>
+</div>
+
+</div></a>
 
 
 
