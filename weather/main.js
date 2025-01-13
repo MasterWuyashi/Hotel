@@ -6,7 +6,7 @@ function GetInfo() {
     var video = document.getElementById("myVideo");
     var btn = document.getElementById("myBtn");
 
-fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appid=32ba0bfed592484379e51106cef3f204')
+fetch('https://api.openweathermap.org/data/2.5/forecast?q='+newName.value+'&appid=dbcd990317ee663b365db6ebc3ebd20a')
 .then(response => response.json())
 .then(data => {
 
